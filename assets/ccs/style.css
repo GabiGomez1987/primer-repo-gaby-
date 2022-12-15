@@ -1,0 +1,369 @@
+*{
+padding: 0;
+margin: 0; 
+box-sizing: border-box;
+    }
+@font-face {
+    font-family: Quicksand-Light;
+    src: url(../font/Quicksand/Quicksand-Light.ttf);
+}
+@font-face {
+    font-family: Quicksand-SemiBold;
+    src: url(../font/Quicksand/Quicksand-SemiBold.ttf);
+}
+
+    
+/*Inicio*/
+.Reel img{
+    width: 100%;
+    height: 400px;
+    margin-block-start: 100px;
+    object-fit: cover;
+}
+.Reel h2{
+    position: absolute;
+    bottom: 20%;
+    left: 44%;
+    height: 20%;
+    text-align: center;
+    font-family: Quicksand-SemiBold;
+    color: black
+}
+.Reel button{
+    position: absolute;
+    bottom: 15%;
+    left: 44%;
+    height: 50px;
+    font-size: 20px;
+}
+.Navegador .logo{
+    width: 20px;
+    padding: 10px;
+}
+.Navegador{
+    width: 100%;
+    background-color:#c9c1b0;
+    padding: 5px;
+    font-family: Quicksand-Light;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.Navegador > ul{
+    display: flex;
+    list-style-type: none;
+    height: 30px;
+}
+.Navegador > ul > li:hover ul{ display: block;}
+.Navegador > ul > li{
+    position: relative;
+}
+.Navegador > ul > li > a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.Navegador > ul > li > ul {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 100px;
+    list-style-type: none;
+    background-color:#c9c1b0;
+    color: white;
+    display: none;
+}
+.Navegador > ul > li > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #404040;
+    font-size: 25px;
+}
+
+.ImgFond{
+ background-image: url(../img/fondo-acogedor-fondo-pantalla-hilo-tejer_169016-6305.jpg);
+ width: 100%;
+ height: 400px;
+ background-size: cover;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: Quicksand-Light;
+ font-size: 30px;
+ color:#3f3424;
+}
+.RegistroM{
+background-color:#e4dfd0;
+font-family:Quicksand-Light;
+ font-size: 20px;
+ display: inline-block;
+ color: #a29481;
+ background-size: cover;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 10px;
+ margin-block-start: 10px;
+ margin-block-end: 10px;
+}
+.btn{
+        display: block;
+        text-decoration: none;
+        margin-block: 20px;
+        padding: 10px 30px;
+        background-color: #a29481;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-left: 15px;
+        color: #e4dfd0;
+        text-align: center;
+}
+
+
+/* productos*/
+
+.Productos > h1{
+    font-family: Quicksand-Light;
+    margin-block-start: 200px;
+    color: #a29481;
+    font-size: 24px;
+}
+.Tarjeta{
+    width: 350px;
+    margin: 10px;
+    margin-block-end: 20px;
+    gap: 20px;
+    font-family: Quicksand-Light;
+    color: #a29481;
+    border: solid 2px;
+    overflow: hidden; /* para que no se me salga la img x elborde*/
+    padding: 10px;
+
+}
+.Tarjeta img{
+    width: 100%;
+}
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-block-start: 40px;
+}
+.tarjeta-info{
+    margin: 20px;
+    background-color:white;
+    color: #a29481;
+    width: 200px;
+    display: block;
+}
+
+/*CONTACTOS */
+
+.Contactos h1{
+    font-family: sans-serif;
+    color: #a29481;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 150px;
+}
+.Contactos p{
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height:3;
+    text-align: center;
+}
+
+.Fondo{
+    background-image: url(../img/compu\ .jpeg);
+    background-size: cover;
+    height: 600px;
+    padding-top: 50px;
+}
+.form label input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+}
+.form label textarea{
+    background-color: transparent;
+    width: 300px;
+    height: 50px;
+    border: 0;
+    border-bottom: 1px solid white;
+}
+.form button{
+    background-color: white;
+    color: #3f3424;
+    border: 0;
+    border-radius: 5px;
+}
+.form{
+    background-color: #a29481;
+    width: 700px;
+    height: 300px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10px;
+    color:white;
+    font-size: 20px;
+    border-radius: 5%;
+    border-style: groove;
+    padding: 30px;
+    margin-left: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 50px;
+    grid-template-areas:    "nombre   apellido"
+                            "email    email"
+                            "mensaje  mensaje"
+                            "enviar   enviar";
+}
+.Form label:nth-child(1){
+    grid-area: nombre;
+}
+
+.form label:nth-child(2){
+    grid-area: apellido;
+}
+.Form label:nth-child(3){
+    grid-area: email;
+}
+.Form label:nth-child(4){
+    grid-area: mensaje;
+}
+.Form button:nth-child(5){
+    grid-area:enviar;
+}
+.form label{
+    display: flex;
+     flex-direction: column;
+     padding: 10px;
+}
+
+
+
+
+ /*CLIENTES */
+ .Clientes h1{
+    font-family: Quicksand-Light;
+   margin-block-start: 200px;
+    color: #a29481;
+    font-size: 24px;
+ }
+ .Clientesss{
+    display: flex;
+    justify-content: space-around;
+ }
+ .TarjetaCliente{
+    width: 200px;
+    height: 200px;
+    margin-block: 5px;
+    padding: 5px;
+ }
+ .TarjetaCliente >img {
+width: 100%;
+
+ }
+
+
+/*OPORTUNIDADES*/
+.Oportunidades h1{
+    font-family: Quicksand-Light;
+    margin: 15px;
+    color: #a29481;
+    font-size: 24px;
+    margin-block-start: 200px;
+}
+/*HISTORIA */
+.Historia2{
+    font-family: Quicksand-Light;
+    color: #a29481;
+    font-size: 24px;
+    padding: 150px;
+}
+
+.Historia3{
+    width: 100%;
+    height: 200px;
+    background-color:#a29481;  
+}
+h2{
+    color: #a29481;
+    font-family: Quicksand-Light;
+}
+.Video{ /* no me sale editar el tamaño del video */
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+.footer{
+    background-color: #c9c1b0;
+    
+}
+.footer .caja{
+    text-decoration: none;
+    display: flex;
+    justify-content:center;
+}
+.footer p{
+    font-family:Quicksand-Light;
+    font-size: 10px;
+    text-align: center;
+    margin-block-start: 30px;
+    font-weight: bold;
+    top: end;
+}
+.footer img{
+    width: 35px;
+    height: 35px;
+    margin-block-start: 20px;
+    padding: 5px;
+
+}
+
+  .css-button-sliding-to-left--grey {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid#a29481;
+    color:#a29481;
+    font-family: Quicksand-Light; 
+  }
+  .css-button-sliding-to-left--grey:hover {
+    color: white;
+  }
+  .css-button-sliding-to-left--grey:hover:after {
+    width: 100%;
+  }
+  .css-button-sliding-to-left--grey:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #a29481;
+  }
