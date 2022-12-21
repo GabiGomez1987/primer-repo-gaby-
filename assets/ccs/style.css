@@ -132,28 +132,35 @@ box-sizing: border-box;
     display: none;
 }
 @media(max-width:576px){
-    .Navegador .fa-bars{
-        display: block;
-        color: white;
-        font-size: 36px;
-}
-.Navegador{
-    display: flex;
-    background-color: #c9c1b0;
-    width: 39%;
-    height: 100vh;
-    display: fixed;
-}
-.Navegador > ul{
-    top: 0;
-    flex-direction: column;
-    justify-content: start;
 
+    .Navegador .logo{
+        display: none;
+    }
+
+    .Navegador{
+        width: 100%;
+        background-color:#c9c1b0;
+        padding: 30px;
+        font-family: Quicksand-Light;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        display: flex;
+        justify-content: center;
+    }
+.Navegador >ul{
+    display: flex;
+    list-style-type: none;
+    height: 40px;
 }
-.Navegador .logo{
-    display: none;
+.Navegador > ul > li > a{
+    font-size: 15px;
+    margin: 0;
+    padding: 10px;
 }
 }
+    
+
 
 
 .ImgFond{
