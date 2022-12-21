@@ -227,6 +227,10 @@ font-family:Quicksand-Light;
 }
 .Tarjeta img{
     width: 100%;
+    object-fit: cover;
+}
+.Tarjeta img:hover{
+    transform:scale(1.5)
 }
 .tarjetas{
     display: flex;
